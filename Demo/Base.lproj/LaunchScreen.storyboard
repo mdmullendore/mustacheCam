@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Avalon.otf">
+            <string>AvalonPlain</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mustacheSplash" translatesAutoresizingMaskIntoConstraints="NO" id="kUM-3q-tAO">
+                                <rect key="frame" x="238" y="136" width="124" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="abJ-qr-Bga"/>
+                                    <constraint firstAttribute="width" constant="124" id="bSq-Z8-Dy8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stash on" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OF4-JG-SH5">
+                                <rect key="frame" x="262" y="397" width="76" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="9Ql-Fx-nVM"/>
+                                    <constraint firstAttribute="height" constant="21" id="XKd-3u-Ib1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvalonPlain" family="Avalon" pointSize="17"/>
+                                <color key="textColor" red="0.85098039215686272" green="0.81176470588235294" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25882352941176467" green="0.15686274509803921" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="kUM-3q-tAO" firstAttribute="centerX" secondItem="OF4-JG-SH5" secondAttribute="centerX" id="FYl-3O-QKy"/>
+                            <constraint firstItem="kUM-3q-tAO" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="JVM-P3-alp"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="OF4-JG-SH5" secondAttribute="bottom" constant="182" id="PRf-qg-cAq"/>
+                            <constraint firstItem="kUM-3q-tAO" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="116" id="raS-Ka-FhT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mustacheSplash" width="170" height="170"/>
+    </resources>
+</document>
