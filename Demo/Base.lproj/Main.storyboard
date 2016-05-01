@@ -23,16 +23,67 @@
                                     <segue destination="8Z0-21-wTe" kind="embed" identifier="embedFaceTrackerViewController" id="91t-0T-LNy"/>
                                 </connections>
                             </containerView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="u2c-sA-lHZ">
-                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="u2c-sA-lHZ">
+                                <rect key="frame" x="291" y="289" width="20" height="20"/>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DT3-BN-Lno">
                                 <rect key="frame" x="558" y="25" width="22" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" image="camera" backgroundImage="camera"/>
                                 <connections>
                                     <action selector="optionsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A0L-ah-Py9"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="RIh-Tn-SHE">
+                                <rect key="frame" x="1" y="546" width="600" height="54"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDO-OW-VaV">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="54"/>
+                                        <color key="backgroundColor" red="0.85098039219999999" green="0.81176470590000005" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="mustache_icon"/>
+                                        <state key="highlighted" image="mustache_icon"/>
+                                        <connections>
+                                            <action selector="mustacheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F8S-LG-ovD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRU-6T-lZB">
+                                        <rect key="frame" x="120" y="0.0" width="120" height="54"/>
+                                        <color key="backgroundColor" red="0.85098039219999999" green="0.81176470590000005" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="ungrommed_icon"/>
+                                        <connections>
+                                            <action selector="ungrommedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hf8-f1-fKH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDp-Sm-niG">
+                                        <rect key="frame" x="240" y="0.0" width="120" height="54"/>
+                                        <color key="backgroundColor" red="0.85098039219999999" green="0.81176470590000005" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="walrus_icon"/>
+                                        <connections>
+                                            <action selector="walrusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hQI-jJ-oa7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laD-9W-QG0">
+                                        <rect key="frame" x="360" y="0.0" width="120" height="54"/>
+                                        <color key="backgroundColor" red="0.85098039219999999" green="0.81176470590000005" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="pencil_icon"/>
+                                        <connections>
+                                            <action selector="pencilButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bw8-iF-Uaz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgZ-xw-q3e">
+                                        <rect key="frame" x="480" y="0.0" width="120" height="54"/>
+                                        <color key="backgroundColor" red="0.85098039215686272" green="0.81176470588235294" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="mustache_pipe_icon"/>
+                                        <connections>
+                                            <action selector="mustachePipeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dDd-Om-67A"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.85098039215686272" green="0.81176470588235294" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="m0g-JP-mT1"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -43,6 +94,10 @@
                             <constraint firstAttribute="trailing" secondItem="4WN-gv-Ukf" secondAttribute="trailing" id="DSW-cY-PG3"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4WN-gv-Ukf" secondAttribute="bottom" id="Dvd-OC-nPE"/>
                             <constraint firstItem="u2c-sA-lHZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RJh-yA-D8b"/>
+                            <constraint firstItem="RIh-Tn-SHE" firstAttribute="trailing" secondItem="4WN-gv-Ukf" secondAttribute="trailing" id="TyC-ad-mTl"/>
+                            <constraint firstItem="RIh-Tn-SHE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="490" id="Wac-Ee-pwg"/>
+                            <constraint firstItem="RIh-Tn-SHE" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="YyH-cv-iva"/>
+                            <constraint firstItem="RIh-Tn-SHE" firstAttribute="leading" secondItem="4WN-gv-Ukf" secondAttribute="leading" id="aVT-pM-gqx"/>
                             <constraint firstAttribute="trailing" secondItem="DT3-BN-Lno" secondAttribute="trailing" constant="20" id="bto-Xf-Hlp"/>
                             <constraint firstItem="4WN-gv-Ukf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="m7T-Yr-OKR"/>
                             <constraint firstItem="DT3-BN-Lno" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="10" id="siZ-cU-1zU"/>
@@ -50,6 +105,7 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="CCs-Ye-6Tz"/>
+                                <exclude reference="Wac-Ee-pwg"/>
                                 <exclude reference="siZ-cU-1zU"/>
                             </mask>
                         </variation>
@@ -62,6 +118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="284" y="375"/>
         </scene>
         <!--Face Tracker View Controller-->
         <scene sceneID="tMQ-vQ-PVF">
@@ -74,7 +131,7 @@
                     <view key="view" contentMode="scaleToFill" id="7eX-xu-k1f">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.85098039215686272" green="0.81176470588235294" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.25882352941176467" green="0.15686274509803921" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b4S-Y2-CdJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -84,5 +141,10 @@
     </scenes>
     <resources>
         <image name="camera" width="22" height="22"/>
+        <image name="mustache_icon" width="30" height="30"/>
+        <image name="mustache_pipe_icon" width="30" height="30"/>
+        <image name="pencil_icon" width="30" height="30"/>
+        <image name="ungrommed_icon" width="30" height="30"/>
+        <image name="walrus_icon" width="30" height="30"/>
     </resources>
 </document>

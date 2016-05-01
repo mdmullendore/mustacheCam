@@ -2,6 +2,7 @@ import UIKit
 import FaceTracker
 
 class ViewController: UIViewController, FaceTrackerViewControllerDelegate {
+    
     var mustacheView = UIImageView()
     var faceTrackerViewController: FaceTrackerViewController?
     var pointViews = [UIView]()
@@ -71,6 +72,7 @@ class ViewController: UIViewController, FaceTrackerViewControllerDelegate {
         view.layer.anchorPoint = anchorPoint
 
     }
+
     
     func faceTrackerDidUpdate(points: FacePoints?) {
         if let points = points {
@@ -79,7 +81,7 @@ class ViewController: UIViewController, FaceTrackerViewControllerDelegate {
                 let numPoints = points.getTotalNumberOFPoints()
                 for _ in 0...numPoints {
                     let view = UIView()
-                    view.backgroundColor = UIColor.whiteColor()
+                    view.backgroundColor = UIColor.clearColor()
                     self.view.addSubview(view)
                     
                     pointViews.append(view)
@@ -105,7 +107,7 @@ class ViewController: UIViewController, FaceTrackerViewControllerDelegate {
             
             mustacheView.transform = CGAffineTransformIdentity
             
-            mustacheView.frame = CGRectMake(eyeToEyeCenter.x - stashWidth / 2, eyeToEyeCenter.y + 0.09 * stashHeight, stashWidth, stashHeight)
+            mustacheView.frame = CGRectMake(eyeToEyeCenter.x - stashWidth / 2, eyeToEyeCenter.y + 0.1 * stashHeight, stashWidth, stashHeight)
             mustacheView.hidden = false
             
             setAnchorPoint(CGPointMake(1.0, 1.0), forView: mustacheView)
@@ -121,5 +123,29 @@ class ViewController: UIViewController, FaceTrackerViewControllerDelegate {
             }
         }
     }
+    
+    // event handlers to change image
+    @IBAction func mustacheButton(sender: AnyObject) {
+        mustacheView.image = UIImage(named: "mustache")
+    }
+    
+    @IBAction func ungrommedButton(sender: AnyObject) {
+        mustacheView.image = UIImage(named: "ungrommed")
+    }
+    
+    @IBAction func walrusButton(sender: AnyObject) {
+        mustacheView.image = UIImage(named: "walrus")
+    }
+    
+    @IBAction func pencilButton(sender: AnyObject) {
+        mustacheView.image = UIImage(named: "pencil")
+    }
+    
+    @IBAction func mustachePipeButton(sender: AnyObject) {
+        mustacheView.image = UIImage(named: "mustache_pipe")
+    }
+    
+    
+    
 }
 
