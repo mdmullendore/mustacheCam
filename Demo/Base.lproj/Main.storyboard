@@ -84,11 +84,19 @@
                                     <constraint firstAttribute="height" constant="54" id="m0g-JP-mT1"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PnR-vr-zyl">
+                                <rect key="frame" x="279" y="494" width="44" height="44"/>
+                                <state key="normal" image="camera_target"/>
+                                <connections>
+                                    <action selector="useCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i79-k5-1cF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="DT3-BN-Lno" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="6ex-jQ-das"/>
                             <constraint firstItem="4WN-gv-Ukf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="94r-dT-9aP"/>
+                            <constraint firstItem="PnR-vr-zyl" firstAttribute="centerX" secondItem="RIh-Tn-SHE" secondAttribute="centerX" id="AR1-uG-mhf"/>
                             <constraint firstItem="u2c-sA-lHZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Adb-1k-dbp"/>
                             <constraint firstItem="4WN-gv-Ukf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="CCs-Ye-6Tz"/>
                             <constraint firstAttribute="trailing" secondItem="4WN-gv-Ukf" secondAttribute="trailing" id="DSW-cY-PG3"/>
@@ -96,6 +104,7 @@
                             <constraint firstItem="u2c-sA-lHZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RJh-yA-D8b"/>
                             <constraint firstItem="RIh-Tn-SHE" firstAttribute="trailing" secondItem="4WN-gv-Ukf" secondAttribute="trailing" id="TyC-ad-mTl"/>
                             <constraint firstItem="RIh-Tn-SHE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="490" id="Wac-Ee-pwg"/>
+                            <constraint firstItem="RIh-Tn-SHE" firstAttribute="top" secondItem="PnR-vr-zyl" secondAttribute="bottom" constant="8" symbolic="YES" id="Wim-fH-klV"/>
                             <constraint firstItem="RIh-Tn-SHE" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="YyH-cv-iva"/>
                             <constraint firstItem="RIh-Tn-SHE" firstAttribute="leading" secondItem="4WN-gv-Ukf" secondAttribute="leading" id="aVT-pM-gqx"/>
                             <constraint firstAttribute="trailing" secondItem="DT3-BN-Lno" secondAttribute="trailing" constant="20" id="bto-Xf-Hlp"/>
@@ -113,7 +122,9 @@
                     <connections>
                         <outlet property="activityIndicator" destination="u2c-sA-lHZ" id="XEv-pU-hmz"/>
                         <outlet property="faceTrackerContainerView" destination="4WN-gv-Ukf" id="cU8-tV-Dqp"/>
+                        <outlet property="mustacheBar" destination="RIh-Tn-SHE" id="vH7-Xn-5us"/>
                         <outlet property="optionsButton" destination="DT3-BN-Lno" id="utG-iP-HcM"/>
+                        <outlet property="takePhotoButton" destination="PnR-vr-zyl" id="QE3-pK-boF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -141,6 +152,7 @@
     </scenes>
     <resources>
         <image name="camera" width="22" height="22"/>
+        <image name="camera_target" width="44" height="44"/>
         <image name="mustache_icon" width="30" height="30"/>
         <image name="mustache_pipe_icon" width="30" height="30"/>
         <image name="pencil_icon" width="30" height="30"/>
